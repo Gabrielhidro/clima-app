@@ -1,11 +1,13 @@
 import { fetchWeather } from '../../../utils/fetchData'
+import CityPageClient from './CityPageClient'
 
 export default async function CityPage({ params }: { params: { name: string } }) {
-  const weatherData = await fetchWeather(params.name)
+  const cityName = params.name
+  const weatherData = await fetchWeather(cityName)
 
   return (
     <div>
-      <h1>{weatherData.name}</h1>
+      <CityPageClient weatherData={weatherData} />
     </div>
   )
 }
