@@ -24,4 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
     background: none;
   }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+  }
 `
