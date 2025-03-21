@@ -13,7 +13,7 @@ export function SearchBar({ onSearch }: any) {
 
   return (
     <StyledSearchBar>
-      <input type="text" value={searchterm} onChange={(e) => setSearchTerm(e.target.value)} />
+      <input type="text" placeholder="Pesquisar cidade" value={searchterm} onChange={(e) => setSearchTerm(e.target.value)} />
       <button onClick={handleSearch}>
         <MdSearch />
       </button>
