@@ -1,23 +1,39 @@
 import styled from 'styled-components'
 
-export const StyledSearchBar = styled.div`
+export const StyledContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff45;
+  border-radius: 24px;
 
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  .forecastItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 20px;
 
-  button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0070f3;
-    color: #fff;
-    cursor: pointer;
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #ffffff45;
+      padding: 20px;
+      border-radius: 24px;
+
+      .listPerDay {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .subInfo {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: self-end;
+      }
+    }
   }
 `
