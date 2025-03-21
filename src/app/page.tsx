@@ -27,8 +27,10 @@ export default function Home() {
       <Image src={Wallpaper} alt="Wallpaper" layout="fill" objectFit="cover" priority={false} />
       <MainContent>
         <SearchBar onSearch={setWeatherData} />
-        <WeatherDetails weatherData={weatherData} />
-        <DateTimeDisplay />
+        <div className="cityInfo">
+          <WeatherDetails weatherData={weatherData} />
+          <DateTimeDisplay />
+        </div>
         <Forecast city={weatherData?.name} />
       </MainContent>
     </Container>

@@ -9,22 +9,21 @@ export const Container = styled.div`
 `
 
 export const MainContent = styled.div`
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
+  max-width: 1600px;
   background-color: #00000094;
   border-radius: 40px;
   backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  overflow: hidden;
 
-  h1 {
-    text-align: center;
-    padding: 20px;
-    font-size: 42px;
-    font-weight: bold;
-  }
-
-  p {
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
+  .cityInfo {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
   }
 `

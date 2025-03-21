@@ -6,10 +6,15 @@ export const StyledContainer = styled.div`
   padding: 20px;
   background-color: #ffffff45;
   border-radius: 24px;
+  position: relative;
+  flex: 1;
 
   .mainInfo {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff45;
+    padding: 20px;
+    border-radius: 24px;
   }
 
   .icon {
@@ -42,5 +47,13 @@ export const StyledContainer = styled.div`
       gap: 8px;
       font-size: 18px;
     }
+  }
+
+  .favorite {
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 `

@@ -55,7 +55,7 @@ export default function Forecast({ city }: { city: string }) {
                 <div className="subInfo" key={index}>
                   <div>
                     <strong>
-                      {format(new Date(item.dt * 1000), 'HH:mm')} - {item.main.temp.toFixed(0)}°C -{' '}
+                      {format(new Date(item.dt * 1000), 'HH:mm')} - {item.main.temp.toFixed(0)}°C
                     </strong>
                     <p>{item.weather[0].description}</p>
                   </div>

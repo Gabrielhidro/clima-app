@@ -16,8 +16,6 @@ export async function fetchForecast(city: string): Promise<WeatherData> {
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`
     )
 
-    console.log('rers', response)
-
     if (response.status !== 200 || !response.data) {
       throw new Error('Erro ao buscar dados do clima.')
     }

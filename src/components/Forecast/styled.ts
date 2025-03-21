@@ -7,11 +7,13 @@ export const StyledContainer = styled.div`
   padding: 20px;
   background-color: #ffffff45;
   border-radius: 24px;
+  overflow: overlay;
+  height: -webkit-fill-available;
 
   .forecastItems {
     display: flex;
     justify-content: space-between;
-    align-items: self-start;
+    align-items: stretch;
     gap: 20px;
 
     .item {
