@@ -1,23 +1,20 @@
 import styled from 'styled-components'
 
-export const StyledSearchBar = styled.div`
+export const StyledContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
+  padding: 20px;
 
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  background-color: #ffffff45;
+  border-radius: 24px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
   }
 
-  button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0070f3;
-    color: #fff;
-    cursor: pointer;
+  span {
+    font-size: 16px;
   }
 `
